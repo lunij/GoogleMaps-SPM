@@ -2,6 +2,8 @@
 .DS_Store
 
 # Xcode
+.derivedData/
+DerivedData/
 build/*
 *.mode1
 *.mode1v3
@@ -9,11 +11,21 @@ build/*
 *.perspective
 *.perspectivev3
 *.pbxuser
+*.xcodeproj
 *.xcworkspace
 xcuserdata
 
-# Carthage
-Carthage/
+# Tuist
+Derived/
 
-# more
+# Scripts
+.build/
 tmp/
+
+# Binaries
+GoogleMaps/Frameworks/*.framework
+GoogleMaps/Frameworks/iphoneos
+GoogleMaps/Frameworks/iphonesimulator
+LegacyFrameworks/*.framework
+LegacyFrameworks/iphoneos
+LegacyFrameworks/iphonesimulator
