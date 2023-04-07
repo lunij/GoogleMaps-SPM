@@ -5,7 +5,7 @@
 //  Copyright 2013 Google LLC
 //
 //  Usage of this SDK is subject to the Google Maps/Google Earth APIs Terms of
-//  Service: https://developers.google.com/maps/terms
+//  Service: https://cloud.google.com/maps-platform/terms
 //
 
 #import <UIKit/UIKit.h>
@@ -14,9 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- * A circle on the Earth's surface (spherical cap).
- */
+/** A circle on the Earth's surface (spherical cap). */
 @interface GMSCircle : GMSOverlay
 
 /** Position on Earth of circle center. Ignores invalid positions. */
