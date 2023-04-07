@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/GMSCompatabilityMacros.h</key>
 		<data>
-		jh1tEI+w4tGmtPOCgYOCa03+sk0=
+		ViBQLtQNcXh3nnwNT+pC0nWSt2E=
 		</data>
 		<key>Headers/GMSCoordinateBounds.h</key>
 		<data>
-		fBOVzoXCs+kpz1LutT02P1n5Fnw=
+		CnWp6nhArAvi9MBkuH+dq+SheiA=
 		</data>
 		<key>Headers/GMSDeprecationMacros.h</key>
 		<data>
-		ZnFFRUvabLGw7aHuUEGY9gI+wjA=
+		DDTuXIPFK55jyoMbepUeautNM3Y=
 		</data>
 		<key>Headers/GoogleMapsBase.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UpDMseJ/OmJC5Jvkl6BvfrKjyiI=
+		KvUjP+3gtFvi6+QSaqQTtjyvkyg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,21 +35,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7/9mcMBLPJJwRd0DM5ChjZH6K1jbf5FuR9eoSwykvFQ=
+			/DgclHda0dSVrSwQwVnf872aLE4edpq4Uzsns+X67bU=
 			</data>
 		</dict>
 		<key>Headers/GMSCoordinateBounds.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4k98ZtCEzDzkZsaOaaIhRYXoZgDvQTxVLywOA4IX834=
+			jPFHGtyWVYFLIaPJud5Zsoy0uj9LSUsIk42EkTVi5+M=
 			</data>
 		</dict>
 		<key>Headers/GMSDeprecationMacros.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YoiR2LYT7MtldigEJ63AaXaUoJp/xjQ6OEzVG/SHYhQ=
+			bKqma/4aJxfI1Bw1KB1AYFowRx1gYUPUZfzHkLbQ6Lw=
 			</data>
 		</dict>
 		<key>Headers/GoogleMapsBase.h</key>
