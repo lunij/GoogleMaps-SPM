@@ -1,0 +1,6 @@
+This folder is intended to contain the original XCFrameworks by Google.
+
+GoogleMaps.xcframework
+GoogleMapsBase.xcframework
+GoogleMapsCore.xcframework
+GoogleMapsM4B.xcframework

@@ -24,8 +24,6 @@ tmp/
 
 # Binaries
 GoogleMaps/Frameworks/*.framework
-GoogleMaps/Frameworks/iphoneos
-GoogleMaps/Frameworks/iphonesimulator
-LegacyFrameworks/*.framework
-LegacyFrameworks/iphoneos
-LegacyFrameworks/iphonesimulator
+GoogleMaps/ModifiedFrameworks/iphoneos
+GoogleMaps/ModifiedFrameworks/iphonesimulator
+GoogleMaps/OriginalFrameworks/*.xcframework

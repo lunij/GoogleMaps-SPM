@@ -6,14 +6,32 @@ cd $(dirname $0)/..
 ROOT_DIR=$PWD
 BUILD_DIR="$ROOT_DIR/.build"
 SCRIPTS_DIR="$ROOT_DIR/Scripts"
-LEGACY_FRAMEWORKS_DIR="$ROOT_DIR/LegacyFrameworks"
 PROJECT_NAME="GoogleMaps"
 PROJECT_DIR="$ROOT_DIR/$PROJECT_NAME"
-
-source $SCRIPTS_DIR/convert_frameworks.sh
+FRAMEWORKS_DIR="$PROJECT_DIR/Frameworks"
+MODIFIED_FRAMEWORKS_DIR="$PROJECT_DIR/ModifiedFrameworks"
+ORIGINAL_FRAMEWORKS_DIR="$PROJECT_DIR/OriginalFrameworks"
 
 function cecho() {
     echo -e "\033[1;36m>>\033[1;37m $1\033[0m"
+}
+
+function prepare_frameworks() {
+    cd $MODIFIED_FRAMEWORKS_DIR
+
+    rm -rf iphoneos
+    rm -rf iphonesimulator
+
+    mkdir -p iphoneos
+    mkdir -p iphonesimulator
+
+    cp -R $ORIGINAL_FRAMEWORKS_DIR/*.xcframework/ios-arm64/*.framework iphoneos/
+    cp -R $ORIGINAL_FRAMEWORKS_DIR/*.xcframework/ios-arm64_x86_64-simulator/*.framework iphonesimulator/
+
+    ln -sF $MODIFIED_FRAMEWORKS_DIR/iphoneos/GoogleMaps.framework $FRAMEWORKS_DIR
+    ln -sF $MODIFIED_FRAMEWORKS_DIR/iphoneos/GoogleMapsBase.framework $FRAMEWORKS_DIR
+    ln -sF $MODIFIED_FRAMEWORKS_DIR/iphoneos/GoogleMapsCore.framework $FRAMEWORKS_DIR
+    ln -sF $MODIFIED_FRAMEWORKS_DIR/iphoneos/GoogleMapsM4B.framework $FRAMEWORKS_DIR
 }
 
 function archive_project() {
@@ -64,8 +82,9 @@ function zip_xcframework() {
     shasum -a 256 "$framework_name.xcframework.zip" >> checksums
 }
 
-cd $ROOT_DIR
+prepare_frameworks
 
+cd $ROOT_DIR
 tuist generate --no-open
 
 rm -rf $BUILD_DIR
